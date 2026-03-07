@@ -1,0 +1,19 @@
+{
+  "name": "backend-project",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "5.2.1",
+    "mongoose": "9.1.4",
+    "dotenv": "17.2.3",
+    "cors": "2.8.5",
+    "jsonwebtoken": "9.0.2",
+    "bcrypt": "5.1.1",
+    "cookie-parser": "1.4.7"
+  },
+  "packageManager": "pnpm@10.28.2"
+}
