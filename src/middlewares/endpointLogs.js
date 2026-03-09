@@ -22,9 +22,7 @@ const logRequest = (req, res, next) => {
       const durationStr = `${color.magenta}${duration}ms${color.reset}`;
 
       // Imprimir la información con colores
-      console.log(
-        `${border} ${dateStr} ${border} ${methodStr} ${urlStr} ${statusStr} - ${durationStr}`,
-      );
+      console.log(`${border} ${dateStr} ${border} ${methodStr} ${urlStr} ${statusStr} - ${durationStr}`);
     });
   }
   next();
