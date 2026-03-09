@@ -1,0 +1,21 @@
+[
+  {
+    "role": "admin",
+    "accessTo": [
+      { "path": "/auth/logout", "method": ["POST"] },
+      { "path": "/auth/change-password", "method": ["POST"] },
+      { "path": "/users", "method": ["GET", "POST"] },
+      { "path": "/users/own", "method": ["GET", "PATCH"] },
+      { "path": "/users/:id", "method": ["POST", "PATCH", "DELETE"] },
+      { "path": "/users/:id/activate", "method": ["POST"] }
+    ]
+  },
+  {
+    "role": "user",
+    "accessTo": [
+      { "path": "/auth/logout", "method": ["POST"] },
+      { "path": "/auth/change-password", "method": ["POST"] },
+      { "path": "/users/own", "method": ["GET", "PATCH"] }
+    ]
+  }
+]
