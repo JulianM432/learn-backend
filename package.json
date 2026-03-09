@@ -7,6 +7,17 @@
     "dev": "node --env-file .env --watch index.js",
     "start": "node --env-file .env index.js"
   },
+  "prettier": {
+    "singleQuote": false,
+    "semi": true,
+    "tabWidth": 2,
+    "printWidth": 110,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "bracketSameLine": true,
+    "arrowParens": "always",
+    "endOfLine": "crlf"
+  },
   "dependencies": {
     "bcrypt": "6.0.0",
     "cookie-parser": "1.4.7",
