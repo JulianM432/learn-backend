@@ -8,7 +8,7 @@ router.get("/", UserController.getUsers);
 router.get("/own", UserController.getOwnUserData);
 router.patch("/own", UserController.updateOwnUserData);
 
-router.post("/:id", UserController.activateUser);
+router.post("/:id/activate", UserController.activateUser);
 router.patch("/:id", UserController.updateUser);
 router.delete("/:id", UserController.deactivateUser);
 
