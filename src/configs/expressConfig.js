@@ -1,12 +1,12 @@
 // Library
 import { app } from "./express.js";
 // Middlewares
-import sintaxMiddleware from "../src/middlewares/sintaxJSON.js";
-import endpointLogs from "../src/middlewares/endpointLogs.js";
-import authMiddleware from "../src/middlewares/authMiddleware.js";
+import sintaxMiddleware from "../middlewares/sintaxJSON.js";
+import endpointLogs from "../middlewares/endpointLogs.js";
+import authMiddleware from "../middlewares/authMiddleware.js";
 // ROUTES
-import usersRoutes from "../src/routes/users.js";
-import authRoutes from "../src/routes/auth.js";
+import usersRoutes from "../routes/users.js";
+import authRoutes from "../routes/auth.js";
 
 export const configRoutes = () => {
   app.use("/users", usersRoutes);

@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import { printBox } from "../src/functions/printBox.js";
+import { printBox } from "../functions/printBox.js";
 
 export const app = express();
 // Configs de las variables
